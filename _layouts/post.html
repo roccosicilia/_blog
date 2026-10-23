@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        - <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    
+    {%- if page.image -%}
+      <!-- Contenitore per immagine + testo di anteprima affiancati -->
+      <div style="overflow: hidden; margin-bottom: 20px;">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" style="float: left; width: 280px; max-width: 100%; margin-right: 20px; margin-bottom: 15px; border-radius: 4px;" />
+        <div>
+          {{ page.excerpt }}
+        </div>
+      </div>
+      
+      <!-- Il resto del post continua a tutta larghezza sotto l'immagine -->
+      {{ content | remove_first: page.excerpt }}
+      
+    {%- else -%}
+      {{ content }}
+    {%- endif -%}
+
+  </div>
+  
+  {% include discord-cta.html %}
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

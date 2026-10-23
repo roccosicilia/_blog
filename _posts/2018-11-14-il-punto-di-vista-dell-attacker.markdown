@@ -1,0 +1,29 @@
+---
+layout: post
+title:  "Il punto di vista dell’attacker nell’analisi dei target."
+date:   2018-11-14 09:00:00 +0200
+categories: [cyber-security]
+---
+Una delle prime riflessioni che porto all’attenzione delle aziende con cui ci confrontiamo è relativa alla comprensione del punto di vista dell’attacker che prende di mira l’azienda interessata. E’ un aspetto che vedo poco indagato anche se di fondamentale importanza in quanto comprendere le motivazioni che portano ad un attacco è alla base della definizione di una strategia di difesa efficace, quindi è da qui che ritengo saggio iniziare.
+
+L’obiettivo, ovvio, è evitare di spendere energie e risorse su questioni fuori focus rispetto all’esigenza di protezione e difesa dell’azienda che ha deciso di approcciare, seriamente, il tema della cyber security.
+
+## La motivazione: “perché dovremmo subire un attacco informatico?”
+Dovrebbe essere ormai chiaro che buona parte degli attacchi informatici è motivato da fattori economici. Il cyber-crime è, di fatto, un modello di business che presenta le sue verticalizzazioni e applicationi; buona parte degli attacchi mirano alla revenue immediata ma è sempre più frequente la “somministrazione di consulenza” per attacchi specifici inerenti furti di dati ed informazioni su commissione (cyber-spionaggio e simili).
+
+
+Compreso il tema “motivazionale”, il primo passo verso la realizzazione di una strategia di difesa è applicare questo modello di business crimisono al proprio contesto. Chiediamoci: “cosa, un attacker, potrebbe trovare di interessante nella mia realtà produttiva, dal punto di vista lucrativo?” Non è una domanda a cui rispondere senza riflettere e sono bandite risposte prive di ogni analisi del tipo “ma noi non abbiamo niente di segreto” o simili. Va invece considerato il contesto in cui la nostra azienda opera, il mercato di riferimento, i dati che gestiamo, come li gestiamo, le procedure di gestione delle finanze, la tipologia di lavoro che svolgiamo e mille altri fattori.
+
+Il suggerimento che posso dare è di non fermarsi al valore intrinseco del singolo dato o della singola struttura: un database di anagrafiche di per se potrebbe valer poco ma il danno di immagine che deriva da un Data Breach potrebbe impattare sensibilmente il vostro business. Capita quindi di essere soggetti a forme di ricatto da parte dell’attacker che ha trafugato informazioni il cui valore sta semplicemente nel fatto che non dovevano essere trafugate.
+
+Su un fronte completamente diverso abbiamo le strutture produttive: se il mio business è produrre scatole di cartone ed i miei sistemi informativi “tradizionali” si riducono agli strumenti “da ufficio” dell’Amministrazione potrei pensare di non aver veramente nulla di utile da rubare/trafugare; finché produco scatole sono tranquillo (passatemi l’esempio stupido ma tratto da una storia vera). Casi simili sono terreno fertile per, ad esempio, un attacco DoS che metta fuori uso l’impianto di produzione che, nel bene e nel male, sta diventando un impianto informatizzato/automatizzato/robotizzato. E’ un fronte dove tutto diventa in qualche modo attaccabile e sfruttabile: le casse dei supermercati, le porte degli Hotel, gli ascensori, i valici elettronici, i POS, ...
+
+## L’analisi del target
+Una cosa poco chiara del processo che porta alla realizzazione dell’attacco è che esiste una fase di pura ricerca dove l’attacker raccoglie informazioni sul proprio target. Questa fase è ovviamente fondamentale per l’attacker che, se vuole avete successo, deve sviluppare una strategia offensiva che gli permetta di agire rapidamente e silenziosamente. Ciò presuppone una profonda conoscenza della vittima, ottenibile raccogliendo quante più informazioni possibili dalle sorgenti aperte che il vastistimo universo di internet mette a disposizione. Ci sono diverse tecniche per operare in tal senso, OSINT in primis, ed il risultato finale è una schematizzazione di ciò che l’azienda/ente “racconta” di se. Il dato interessante è che le aziende, e le persone che le animano, raccontano moltissimo di come sono strutturate e come funzionano, spesso molto più di quanto ci si renda conto.
+
+## Il vettore: “come potremmo essere attaccati?”
+Solo dopo aver compreso la motivazione del nemico possiamo, con cognisione di causa, parlare di vettore d’attacco. Chi “salta” la prima fase dell’analisi si trova nella situazione, estremamente inefficiente, di dover considerare parimenti tutti i potenziali vettori d’attacco o, peggio ancora, solo quelli che si conoscono (che inevitabilmente saranno meno di quelli che conosce l’attacker). Di per se non è un male difendersi da TUTTO, ma nel mondo vero le aziende non hanno risorse infinite (anche e soprattutto economiche), risulta quindi più sensato individuare dei reali rischi ed un set di attacchi “probabili” sulla base delle motivazioni individuate per un attacco e rapportare il tutto allo stato in cui l’azienda si trova in termini di sicurezza informatica, tema esplorabile con assessment specifici sull’infrastruttura e sulle procedure (queste ultime spesso non prese in considerazione).
+
+Questo tipo di valutazione richiede skills specifiche del mondo dell’offensive security, si tratta di competenze molto verticali che di solito troviamo nei Red Team, ovvero in quelle figure che conoscono le tecniche e le modalità con cui viene condotto un attacco come, ad esempio, gli Ethical Hacker.
+
+Per chiudere questa riflessione non posso non citare uno dei miei maestri, Sun Tzu, che ormai cito abitualmente in tutti i miei talk: "Chi conosce il proprio nemico e conosce se stesso potrà affrontare senza timore cento battaglie."

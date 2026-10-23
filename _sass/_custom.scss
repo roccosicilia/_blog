@@ -1,0 +1,356 @@
+/* ==========================================================================
+   PERSONALIZZAZIONI 
+   ========================================================================== */
+
+.site-header .wrapper {
+  padding-top: 20px;
+}
+
+.site-title,
+.site-title:visited,
+.site-nav .page-link,
+.site-nav .page-link:visited {
+  color: #fff;
+}
+
+/* blockquote (riquadri nota) */
+blockquote {
+  margin: 20px 0;
+  padding: 15px 20px;
+  color: #333333;
+  background-color: #f8f9fa; /* sfondo leggermente grigio/chiaro */
+  border-left: 4px solid #2a7ae2; /* barra colorata a sinistra */
+  border-radius: 0 4px 4px 0;
+  
+  /* rimuove i margini interni dei paragrafi dentro al blockquote */
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.post-item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.post-cover-link { flex-shrink: 0; }
+
+.post-cover {
+  width: 240px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.post-content { flex: 1; min-width: 0; }
+.post-content h3 { margin: 4px 0 8px; }
+.post-excerpt { margin: 0 0 8px; }
+
+@media (max-width: 640px) {
+  .post-item { flex-direction: column; }
+  .post-cover { width: 100%; height: auto; aspect-ratio: 3 / 2; }
+}
+
+/* Stili per le schede dei canali su un'unica riga con sfondo grigio chiaro */
+.cards-container {
+  display: flex;
+  flex-wrap: nowrap; /* Mantiene sempre i 3 box affiancati sulla stessa riga */
+  gap: 15px;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.card-item {
+  flex: 1 1 0; /* Divide lo spazio in 3 parti uguali */
+  min-width: 0;
+  background-color: #f9f9f9; /* Sfondo grigio leggerissimo */
+  border: 1px solid #e2e8f0;   /* Bordo tenue abbinato */
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none !important;
+  color: inherit !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-4px);
+  background-color: #f0f0f0; /* Un grigio leggermente più marcato all'hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.card-item h4 {
+  margin: 6px 0 4px 0;
+  font-size: 1em;
+}
+
+.card-item p {
+  font-size: 0.82em;
+  opacity: 0.8;
+  margin: 0;
+  line-height: 1.25;
+}
+
+/* Gestione per cellulari */
+@media (max-width: 600px) {
+  .cards-container {
+    flex-wrap: wrap; /* Va a capo solo su schermi molto stretti per non schiacciare le immagini */
+  }
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.card-item {
+  text-align: left;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 6px;
+  display: block;
+  transition: opacity 0.2s;
+}
+
+.card-image:hover img { opacity: 0.85; }
+
+.card-item h4 { margin: 12px 0 4px; }
+.card-item p { margin: 0; }
+
+@media (max-width: 640px) {
+  .cards-container { grid-template-columns: 1fr; }
+}
+
+.hero { margin-top: 16px; }
+
+.hero-image {
+  max-height: 320px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ---------- Header con copertina ---------- */
+.site-header {
+  position: relative;
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.site-header .site-title,
+.site-header .site-title:visited,
+.site-header .page-link {
+  color: #fff;
+}
+
+/* Riquadro Substack allineato al wrapper del menu */
+.header-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-support {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 6px;
+}
+
+.support-button {
+  padding: 4px 12px;
+  background: #d9682e;
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.support-button:hover {
+  background: #c25a24;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  .site-header { min-height: 140px; }
+  .header-support span { display: none; }
+}
+
+/* ---------- Categorie ---------- */
+.post-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.post-category {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 0.75rem;
+  color: #555;
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+
+a.post-category:hover {
+  background: #e2e2e2;
+  text-decoration: none;
+}
+
+/* Indice in cima alla pagina /categories/ */
+.category-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+/* ---------- Elenco post nella pagina Categories ---------- */
+
+
+.category-posts li {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 6px;
+}
+
+.category-posts .post-meta {
+  flex-shrink: 0;
+  width: 6.5em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- CTA Discord a fine post ---------- */
+.discord-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 48px 0 24px;
+  padding: 24px 28px;
+  background: linear-gradient(135deg, #f5f6ff 0%, #ebedfc 100%);
+  border: 1px solid #d8dbf5;
+  border-left: 5px solid #5865f2;
+  border-radius: 10px;
+}
+
+.discord-cta-text h3 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+}
+
+.discord-cta-text p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.discord-button {
+  flex-shrink: 0;
+  padding: 10px 22px;
+  background: #5865f2;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(88, 101, 242, 0.35);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.discord-button:hover {
+  background: #4752c4;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .discord-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .discord-button { align-self: stretch; text-align: center; }
+}
+
+/* ---------- Blockquote ---------- */
+blockquote {
+  margin: 28px 0;
+  padding: 18px 24px;
+  background: linear-gradient(135deg, #f5f6ff 0%, #ebedfc 100%);
+  border: 1px solid #d8dbf5;
+  border-left: 5px solid #6aab7a;
+  border-radius: 10px;
+  color: #444;
+  font-size: 1rem;
+  font-style: normal;
+  letter-spacing: normal;
+}
+
+blockquote > :last-child { margin-bottom: 0; }
+blockquote > :first-child { margin-top: 0; }
+
+blockquote cite,
+blockquote footer {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+/* ---------- Paginazione ---------- */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 32px 0;
+  font-size: 0.9rem;
+}
+
+.pagination-link {
+  padding: 6px 14px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+}
+
+a.pagination-link:hover {
+  background: #f0f0f0;
+  text-decoration: none;
+}
+
+.pagination-link.disabled {
+  color: #bbb;
+  background: #fafafa;
+}
+
+.pagination-info { color: #777; }

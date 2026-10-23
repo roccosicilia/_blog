@@ -1,0 +1,17 @@
+{%- if paginator.total_pages > 1 -%}
+<nav class="pagination" aria-label="Paginazione">
+  {%- if paginator.previous_page -%}
+    <a class="pagination-link" href="{{ paginator.previous_page_path | relative_url }}">← Più recenti</a>
+  {%- else -%}
+    <span class="pagination-link disabled">← Più recenti</span>
+  {%- endif -%}
+
+  <span class="pagination-info">Pagina {{ paginator.page }} di {{ paginator.total_pages }}</span>
+
+  {%- if paginator.next_page -%}
+    <a class="pagination-link" href="{{ paginator.next_page_path | relative_url }}">Più vecchi →</a>
+  {%- else -%}
+    <span class="pagination-link disabled">Più vecchi →</span>
+  {%- endif -%}
+</nav>
+{%- endif -%}

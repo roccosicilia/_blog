@@ -21,7 +21,7 @@
 title: Rocco Sicilia's blog
 email: rocco.sicilia@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I'm Rocco Sicilia, also known as Sheliak. This is my personal website, where I share insights, ideas, and reflections on cybersecurity, hacking, science, and technology.
+  I'm Rocco Sicilia and this is my personal website, where I share insights, ideas, and reflections on cybersecurity, hacking, science, and technology.
 baseurl: "/_blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
@@ -34,6 +34,19 @@ github_username:  roccosicilia
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+# Plugin conf.
+paginate: 5
+paginate_path: "/page:num/"
+
+# sass warning fix
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
 
 # Exclude from processing.
 # The following items will not be processed, by default.
