@@ -1,0 +1,16 @@
+---
+layout:     post
+title:      "Se le tecniche OSint consentono l’accesso a dati riservati."
+date:       2020-08-13 09:00:00 +0200
+categories: [cyber-security]
+image:
+---
+E’ apparentemente un paradosso, in realtà è un preciso dato sullo stato di (in)sicurezza di enti ed aziende e su come anche gli addetti ai lavori stiano mal gestendo (nessuno me ne voglia, ovviamente non mi riferisco a tutti ne a qualcuno in particolare) il già complicato tema della Cyber Security.
+
+Con una certa frequenza incontro aziende strutturate, con ottimi reparti IT, ottimi partner tecnologici e ottimi strumenti di lavoro e che hanno intrapreso un qualche percorso di valutazione dello stato di sicurezza informatica delle proprie infrastrutture. Tipicamente vedo molta attenzione verso il tema del **Vulnerability Assessment (VA)** e del **Penetration Testing (PT)**. Bene!
+
+Il paradosso si verifica nel momento in cui, con l’obiettivo di illustrare il metodo di lavoro che utilizzo personalmente assieme al mio Red Team, emergono falle — anche molto critiche — nei sistemi informativi dei nostri interlocutori semplicemente utilizzando tecniche di Open Source Intelligence e nonostante l’azienda abbia già all’attivo diversi VA. Per lo più si tratta di “sviste” nella gestione delle procedure che porta ad esporre dati riservati o di *misconfiguration* che consentono l’accesso pubblico o non presidiato a risorse riservate come documenti, informazioni, sistemi, device. L’accesso non autorizzato a tali informazioni costituisce di per se un rischio per l’azienda che, nei casi in cui mi sono imbattuto, era completamente inconsapevole del fatto. **Allarmante è anche la semplicità con cui queste informazioni sono individuabili**: dal banale utilizzo di Google Dorks per reperide deta dati ed informazioni all’analisi di immagini e fotografie disponibili sui social network; fatto che desta nell’immediato **stupore** e poco dopo **dubbio**: diventa infatti lecito chiedersi in che modo si stiano conducendo le attività di verifica e gestione delle falle, alla luce del fatto che banalissime tecniche OSint consentano di trovare ciò che un VA non ha nemmeno preso in considerazione.
+
+Riflettendo sugli scenari che ho avuto modo di analizzare ed affrontare giungo alla conclusione che si tratta di un problema di metodo: troppe aziende approcciano il tema della Cyber Security come un task “meccanico”, delegando molto allo *strumento* (software) e poco al *cervello*. Penso si debba lavorare nel modo opposto: pur tenendo in alta considerazione la bontà degli strumenti non possiamo limitare le attività di analisi dei rischi cyber alla mera esecuzione di una scansione delle vulnerabilità, spesso eseguita con criteri del tutto irrealistici e priva di analisi. Ritengo invece saggio analizzare il target come lo analizzerebbe un attacker, partendo dalla raccolta delle informazioni per poi progettare un modello di attacco da cui far emergere i rischi ed i punti deboli.
+
+Per farla breve: il modello “meccanicizzato” serve a poco e si rischia di sostenere costi senza ottenere benefici, **un approccio più pragmatico e costruito sul contesto reale (ogni azienda è differente) è ciò che può aiutare ad individuare reali falle ed relativo rapporto rischio/impatto**.
