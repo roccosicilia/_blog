@@ -31,5 +31,5 @@ ToDo
 ## Immagine
 
 ```html
-<img src="{{ '/assets/images-posts/threat-hunting-process.webp' | relative_url }}" alt="image 3" style="float: left; width: 100%; max-width: 100%; margin-right: 20px; margin-bottom: 10px; border-radius: 4px;" />
+<img src="{{ '/assets/images-posts/...' | relative_url }}" alt="demo" style="float: left; width: 100%; max-width: 100%; margin-right: 20px; margin-bottom: 10px; border-radius: 4px;" />
 ```
