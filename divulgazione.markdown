@@ -14,7 +14,7 @@ Se ti appassionano questi temi e trovi valore in quello che faccio, ci sono dive
 
 * **Fai una donazione via [PayPal](https://paypal.me/roccosiciliablog):** Se quello che leggi ti è stato utile e ti va di offrirmi un caffè (o di contribuire ai costi di gestione e di ricerca), una donazione libera è un aiuto concreto per permettermi di continuare in totale indipendenza.
 
-* **Invitarmi a parlare a un evento:** Sono sempre disponibile e felice di partecipare a conferenze, meetup o tavole rotonde in ambito cyber sec. Scrivimi a **rocco.sicilia[at]protonmail[dot]com»**
+* **Invitarmi a parlare a un evento:** Sono sempre disponibile e felice di partecipare a conferenze, meetup o tavole rotonde in ambito cyber sec. Scrivimi a **rocco.sicilia[@]pm.me**
 
 <div class="cards-container">
 

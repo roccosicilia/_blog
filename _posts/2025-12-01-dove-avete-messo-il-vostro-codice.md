@@ -1,0 +1,19 @@
+---
+layout:     post
+title:      "Dove avete messo il vostro codice?"
+date:       2025-12-01 09:00:00 +0100
+categories: [update]
+image:
+---
+
+Tantissime aziende che di "mestiere" non scrivono codice si trovano a dover implementare piccole integrazioni o piccoli tools che nel tempo, in alcuni casi, diventano anche sistemi *core* per l'azienda. Personalmente mi è capitato spesso di incontrare team IT che si erano scritti il proprio tool per la gestione di alcuni task periodici o sistemi di integrazione per la produzione; ho anche incontrato aziende che, un pezzo alla volta, si erano create il proprio gestionale.
+
+Ovviamente chi intraprende questo percorso - ed è corretto ribadire che non è una cosa rara - solitamente non bada minimamente alla sicurezza informatica, sia dal punto di vista del codice che a livello di gestione.
+
+I temi sono da trattare separatamente in quanto hanno dignità propria: la sicurezza del codice sembra un tema ovvio (anche se c'è ancora molto da fare) e la gestione dello stesso spesso viene poco considerata con ripercussioni sulla sicurezza.
+
+Abbiamo discusso il tema nell'ultima puntata podcast cui lascio qui il video di anticipazione:
+
+{% include youtube.html id="-uScRuxdu1A" title="Titolo del video" %}
+
+La puntata è disponibile al link <https://www.infosecunplugged.it/episodes/episode-31.html>.

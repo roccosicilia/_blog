@@ -53,4 +53,4 @@ Tutto ciò che pubblico, qui o altrove, ha lo scopo di stimolare il confronto, a
 - **[LinkedIn](https://www.linkedin.com/in/roccosicilia/)**: condivisione di riflessioni tecniche e aggiornamenti.
 - **[GitHub](https://github.com/roccosicilia)**: strumenti e progetti personali.
 
-Per un progetto, un'attività di consulenza o qualsiasi altra esigenza legata al mondo info security, scrivimi a **rocco.sicilia[at]protonmail[dot]com**.
+Per un progetto, un'attività di consulenza o qualsiasi altra esigenza legata al mondo info security, scrivimi a **rocco.sicilia[@]pm.me**.

@@ -2,7 +2,7 @@
 layout:     post
 title:      "Threat Hunting and Defending #2: concepts, framework, Threat Model (p4)."
 date:       2026-09-27 09:00:00 +0200
-categories: [cyber-security, ita, study-with-me]
+categories: [cyber-security]
 image:      /assets/images-posts/mitre.webp
 ---
 

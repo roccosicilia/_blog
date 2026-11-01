@@ -8,7 +8,7 @@ In diverse occasioni ho scritto e raccontato i motivi che mi spingono a partecip
 
 In questa pagina raccolgo alcuni dei miei interventi (non tutti possono essere resi pubblici) ed il materiale che ho preparato quando la mia partecipazione come relatore/ospite lo ha richiesto. Spero che vi possa tornare utile.
 
-**Se vuoi invitarmi ad un evento o ad una conferenza come relatore puoi scrivermi qui: rocco.sicilia[at]protonmail[dot]com.**
+**Se vuoi invitarmi ad un evento o ad una conferenza come relatore puoi scrivermi qui: rocco.sicilia[@]pm.me.**
 
 <div class="cards-container">
 
