@@ -16,9 +16,9 @@ Il Threat Hunting è un processo molto strutturato che richiede metodo, competen
 
 Questi sono i principi di base del processo di Hunting che verranno affrontati in questo capitolone.
 
->Questa serie di articoli viene dai miei appunti di studio sul Threat Hunting e dal confronto con varie figure dell'information security tra cui diversi analisti del mondo della Defense. Se gli argomenti che porto sul blog ti solo utili puoi iscriverti o seguirmi su una delle piattaforme dove pubblico regolarmente contenuti. **Trovi tutte le info nella pagina [Divulgazione]({{ '/divulgazione' | relative_url }})**.
+> Se trovi interessanti i miei contenuti e vuoi supportare il mio progetto di divulgazione iscriviti alla mia [newsletter](https://roccosicilia.substack.com) sostienimi con una donazione.
 
-## Approccio al Threat Hunting
+# Approccio al Threat Hunting
 
 <img src="{{ '/assets/images-posts/threat-hunting-process.webp' | relative_url }}" alt="image 3" style="float: left; width: 100%; max-width: 100%; margin-right: 20px; margin-bottom: 10px; border-radius: 4px;" />
 
@@ -40,7 +40,7 @@ L'altra faccia della medaglia è il ***Proactive Threat Hunting***: non ci sono 
 
 Anche in questo caso l'output deve servire a produrre nuove logiche di detection o attività di hardening e configurazioni utili alla prevenzione della minaccia indagata.
 
-## Due esempi da fare in lab
+# Due esempi da fare in lab
 
 Per mettere le mani sui sistemi si potrebbero fare degli esercizi in laboratorio. Il primo caso si riferisce ad un task di hunting reattivo: il SIEM segnala che una workstation ha avviato una comunicazione con un IP sospetto. In questo caso possiamo eseguire i seguenti controlli:
 
@@ -53,7 +53,7 @@ Nel secondo task possiamo considerare una casistica di hunting proattivo: suppin
 - raccolta dei powershell log dalle workstation
 - dai log possiamo verificare, tramite opportune ricerche, la presenza di specifiche azioni da parte del threat actor (l'utilizzo di sequenze di comandi, tools, ecc.)
 
-## Tattiche di hunting e threat intelligence
+# Tattiche di hunting e threat intelligence
 
 Il threat hunting basato sulla threat intelligence è un metodo proattivo di analisi che va molto oltre le misure di sicurezza tradizionali. Il threat hunter utilizza le informazioni che possono essere condivide tramite report di threat int. da altri team per analizzare ed identificare eventuali gap nella capacità di detection o intercettare minacce sulla base di nuovi IoC e TTPs.
 
@@ -95,7 +95,7 @@ Per procedere con il task di hunting si fa riferimento, solitamente, a questi st
 6. Validazione delle evidenze individuate per determinare se fanno effettivamente riferimento ad una minaccia
 7. Approfondimento ed reiterazione della ricerca basandosi sui risultati del task svolto
 
-## Identificare i GAP
+# Identificare i GAP
 
 Questo tema mi sta molto a cuore ed è stato l'argomento che ho portato ad una [recente conferenza](https://roccosicilia.com/conferenze/) in cui ho trattato in particolare di GAP di detection, ma non è l'unico GAP che potremmo dover gestire.
 
@@ -110,7 +110,7 @@ Ogni possibile GAP può essere analizzato al fine di definire una strategia di c
 
 Ricordati che puoi sostenere il mio progetto di divulgazione per aiutarmi a proporre nuovi contenuti e nuovi progetti. Trovi tutte le info qui: <https://roccosicilia.com/divulgazione/>.
 
-## Threat Hunting basato sulle anomalie
+# Threat Hunting basato sulle anomalie
 
 Forse l'approccio più "fine" e decisamente complesso è quello che si basa sulle anomalie, non allarmi, non indicatori specifici, semplici variazioni del normale funzionamento dei sistemi.
 
@@ -120,8 +120,6 @@ Ovviamente per tracciare un'anomalia è necessario aver ben documentato il compo
 
 I dati a disposizione devo essere ovviamente analizzati per identificare ed isolare l'anomalia, determinare eventuali cause esterne o l'elemento scatenante e procedere con l'azioni di risposta e mitigazione se possibile.
 
-## Conclusioni
+# Conclusioni
 
 Questi ultimi due blog post sono molto lunghi e si riferiscono ad una parte teorica molto importante del materiale di studio. Seguirà qualche post+video di laboratorio.
-
-Iscriviti al blog per restare aggiornat*.
